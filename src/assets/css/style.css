@@ -34,24 +34,12 @@ h1 {
   margin-bottom: 21px;
 }
 
-h2 {
-  margin-bottom: 32px;
-}
-
 p {
   max-width: 450px;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
   margin-bottom: 21px;
-}
-
-.totalScore {
-  margin-bottom: 0;
-}
-
-.textInfo {
-  font-size: 16px;
 }
 
 a,
@@ -75,33 +63,16 @@ button:hover {
   background-color: var(--font-dark);
 }
 
-li {
-  font-size: 18px;
-  list-style: none;
-  margin-bottom: 16px;
+.hidden {
+  display: none;
 }
 
-input {
-  width: 100%;
-  max-width: 350px;
-  font-size: 18px;
-  padding: 10px 16px;
-  margin-bottom: 18px;
-  border: 3px solid var(--font-dark);
+/* Home page */
+.textInfo {
+  font-size: 16px;
 }
 
-.btn-home {
-  margin-top: 32px;
-}
-
-.btn-save {
-  max-width: 350px;
-}
-
-.btn-submit {
-  margin-top: 2rem;
-}
-
+/* Quiz page */
 .question {
   font-size: 23px;
   line-height: 33px;
@@ -174,14 +145,47 @@ label .checkmark:after {
   margin-top: 2rem;
 }
 
+.btn-submit {
+  margin-top: 2rem;
+}
+
+/* Save answer page */
+.totalScore {
+  margin-bottom: 0;
+}
+
+input {
+  width: 100%;
+  max-width: 350px;
+  font-size: 18px;
+  padding: 10px 16px;
+  margin-bottom: 18px;
+  border: 3px solid var(--font-dark);
+}
+
 .infoSave {
+  display: none;
   max-width: 350px;
   margin-top: 0;
   margin-bottom: 18px;
   line-height: 26px;
-  display: none;
 }
 
-.hidden {
-  display: none;
+.btn-save {
+  max-width: 350px;
+}
+
+/* Highscores page */
+h2 {
+  margin-bottom: 32px;
+}
+
+li {
+  font-size: 18px;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.btn-home {
+  margin-top: 32px;
 }
