@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+:root {
+  --font-dark: #1b1b32;
+  --font-light: #fff;
+  --bg-primary: #f5f6f7;
+  --bg-secondary: #d0d0d5;
+}
+
+body {
+  color: var(--font-dark);
+  background: var(--bg-primary);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 21px;
+}
+
+h2 {
+  margin-bottom: 32px;
+}
+
+p {
+  max-width: 450px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.totalScore {
+  margin-bottom: 0;
+}
+
+.textInfo {
+  font-size: 16px;
+}
+
+a,
+button {
+  width: 100%;
+  max-width: 450px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--font-dark);
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  border: 3px solid var(--font-dark);
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+}
+
+a:hover,
+button:hover {
+  color: var(--font-light);
+  background-color: var(--font-dark);
+}
+
+li {
+  font-size: 18px;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+input {
+  width: 100%;
+  max-width: 350px;
+  font-size: 18px;
+  padding: 10px 16px;
+  margin-bottom: 18px;
+  border: 3px solid var(--font-dark);
+}
+
+.btn-home {
+  margin-top: 32px;
+}
+
+.btn-save {
+  max-width: 350px;
+}
+
+.btn-submit {
+  margin-top: 2rem;
+}
+
+.question {
+  font-size: 23px;
+  line-height: 33px;
+}
+
+label {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  padding-left: 55px;
+  cursor: pointer;
+  font-size: 18px;
+  border: 4px solid var(--bg-secondary);
+  border-bottom: none;
+  background-color: var(--font-light);
+}
+
+label:last-of-type {
+  border: 4px solid var(--bg-secondary);
+}
+
+label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 2px solid var(--font-dark);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+label input:checked ~ .infoSubmit {
+  display: block;
+}
+
+label .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--font-dark);
+}
+
+.infoSubmit,
+.infoEmpty {
+  width: 100%;
+  max-width: 450px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.infoSave {
+  max-width: 350px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  line-height: 26px;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
