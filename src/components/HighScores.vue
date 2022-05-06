@@ -2,7 +2,7 @@
   <div class="container">
     <h2>Leaderboard</h2>
     <ul v-for="item in users" :key="item.id">
-      <li>{{ item.name.toUpperCase() }} - {{ item.score }}</li>
+      <li>{{ item.name }} - {{ item.score }}</li>
     </ul>
     <router-link to="/" class="btn-home">Go Home</router-link>
   </div>
