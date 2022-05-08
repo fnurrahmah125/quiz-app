@@ -23,8 +23,8 @@ export default {
   },
   async created() {
     try {
-      const res_ques = await axios.get("https://tranquil-wildwood-76482.herokuapp.com/questions");
-      const res_users = await axios.get("https://tranquil-wildwood-76482.herokuapp.com/users");
+      const res_ques = await axios.get("https://aqueous-escarpment-94313.herokuapp.com/questions");
+      const res_users = await axios.get("https://aqueous-escarpment-94313.herokuapp.com/users");
       this.questions = res_ques.data;
       res_users.data.forEach((item) => {
         this.users.push(item.name.toLowerCase());
@@ -36,7 +36,7 @@ export default {
   methods: {
     async saveName() {
       if (this.name != "" && !this.users.includes(this.name.toLowerCase())) {
-        const result = await axios.post("https://tranquil-wildwood-76482.herokuapp.com/users", {
+        const result = await axios.post("https://aqueous-escarpment-94313.herokuapp.com/users", {
           name: this.name,
           score: this.totalScore,
         });

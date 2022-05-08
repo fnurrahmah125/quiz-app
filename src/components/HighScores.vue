@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     async loadData() {
-      let result = await axios.get("https://tranquil-wildwood-76482.herokuapp.com/users");
+      let result = await axios.get("https://aqueous-escarpment-94313.herokuapp.com/users");
       this.users = result.data.sort(function (x, y) {
         return y.score - x.score;
       });

@@ -30,7 +30,7 @@ export default {
   },
   async created() {
     try {
-      const result = await axios.get("https://tranquil-wildwood-76482.herokuapp.com/questions");
+      const result = await axios.get("https://aqueous-escarpment-94313.herokuapp.com/questions");
       this.questions = result.data;
     } catch (error) {
       console.log(error);
